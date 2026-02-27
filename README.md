@@ -28,7 +28,7 @@ This is my first serious step into professional software development. After a ye
 - [x] Setting up GitHub and professional environment (February 2026)
 - [ ] Reviewing Python fundamentals (In progress...)
 - [ ] Starting the main codebase (Planned: May 2026)
-- [ ] First Beta Release
+- [ ] First Beta Release 
 
 ---
 
