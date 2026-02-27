@@ -8,7 +8,7 @@
 ---
 
 ### 📝 Project Overview
-This is my first serious step into professional software development. After a year of learning the basics, I decided to build something that solves a real problem.
+This is my first serious step into professional software development. After a half year of learning the basics, I decided to build something that solves a real problem.
 
 *Currently, I am in the **pre-production phase**. For the next 3 months (until May 2026), I am focusing on:*
 * Mastering Advanced Data Structures (Lists, Dictionaries)
@@ -18,7 +18,7 @@ This is my first serious step into professional software development. After a ye
 ---
 
 ### 🛠 Tech Stack
-* **Language:** Python 3.x
+* **Language:** Python 3.14
 * **Version Control:** Git & GitHub
 * **Target Market:** Global / USA
 
