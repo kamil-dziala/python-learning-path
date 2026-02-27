@@ -8,4 +8,4 @@ if wiek >= 18:
 else:
     print("Jesteś niepełnoletni.")
     brakuje = 18 - wiek
-    print("Wróć do nas za " + str(brakuje) + " lat(a).")
+    print("Wróć do nas za " + str(brakuje) + " lat(a)")
