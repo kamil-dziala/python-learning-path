@@ -29,6 +29,7 @@ This is my first serious step into professional software development. After a ha
 - [ ] Reviewing Python fundamentals (In progress...)
 - [ ] Starting the main codebase (Planned: May 2026)
 - [ ] First Beta Release 
+- [ ] Get PCAP certified at the age of 15
 
 ---
 
