@@ -1,6 +1,35 @@
 import random
+choosing = True
 min_val = 1
-max_val = 10
+challange_levels = {
+    "1" : 10,
+    "2" : 50,
+    "3" : 100,
+}
+
+total_tries = 0
+game = 0
+running = True
+
+while choosing:
+    level_choosen = input("What level do you wanna choose? (1,2,3): ")
+    if level_choosen not in challange_levels:
+        print("Invalid input")
+        continue
+    else:
+        max_val = challange_levels[level_choosen]
+        choosing = False
+        break
+print(f"\nYou chose level {level_choosen}!")
+
+
+
+
+
+
+
+
+
 
 total_tries = 0
 game = 0
@@ -12,10 +41,10 @@ running = True
 while running:
     number = random.randint(min_val, max_val)
     tries = 0
-    print(number)
+    print(f"TEST : {number}")
 
     while True:
-        guess = int(input("\nEnter number between 1 and 10: "))
+        guess = int(input(f"\nEnter number between {min_val} and {max_val}: "))
 
         if not (min_val <= guess <= max_val):
             print("Invalid input")
