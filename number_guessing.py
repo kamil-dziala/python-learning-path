@@ -1,5 +1,5 @@
 import random
-choosing = True
+
 min_val = 1
 challange_levels = {
     "1" : 10,
@@ -11,34 +11,34 @@ total_tries = 0
 game = 0
 running = True
 
-while choosing:
-    level_choosen = input("What level do you wanna choose? (1,2,3): ")
-    if level_choosen not in challange_levels:
-        print("Invalid input")
-        continue
-    else:
-        max_val = challange_levels[level_choosen]
-        choosing = False
-        break
-print(f"\nYou chose level {level_choosen}!")
-
-
-
-
-
-
-
-
-
-
-total_tries = 0
-game = 0
-running = True
-
-
-
-
 while running:
+    choosing = True
+    while choosing:
+        level_choosen = input("What level do you wanna choose? (1,2,3): ")
+        if level_choosen not in challange_levels:
+            print("Invalid input")
+            continue
+        else:
+            max_val = challange_levels[level_choosen]
+            choosing = False
+
+    print(f"\nYou chose level {level_choosen}!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     number = random.randint(min_val, max_val)
     tries = 0
     print(f"TEST : {number}")
@@ -57,21 +57,22 @@ while running:
             total_tries += tries
             print(f"You win in {tries} tries!")
 
-            while True:
+            asking = True
+            while asking:
                 again = input("\nWould you like to play again? (y/n) or type 'game' to chcek your wins: ")
                 if again == "game":
                     print(f"You have won {game} games!")
                     continue
                 elif again == "y":
-                    break
+                    asking = False
                 elif again == "n":
+                    asking = False
                     running = False
-                    print(f"Thank you for playing, you won {game} games!Hope you enjoy your game!")
-                    break
-
+                    print(f"Thank you for playing, you won {game} games!\nHope you enjoy your game!")
                 else:
                     print("Invalid input")
             break
+
         elif guess > number:
             print("LOWWER")
         else:
