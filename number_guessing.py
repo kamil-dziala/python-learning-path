@@ -24,21 +24,6 @@ while running:
 
     print(f"\nYou chose level {level_choosen}!")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     number = random.randint(min_val, max_val)
     tries = 0
     print(f"TEST : {number}")
